@@ -1425,56 +1425,57 @@ message.author.sendMessage(`
 ┃┃╱╱┃┃┃╰╯┃╰━╯┃╰╯┃╰╮
 ╰╯╱╱╰╯╰━━┻━━━┻━━┻━╯
 
-[❖═════ To run Log Log, you must have a ROM named═══════❖]
+[❖═════To play the log RUM must exist as═══════❖]
 
 [❖═════════════════════════════❖]
-       Lamaa Bravawat?
-2- :beginner:
-3- :warning:
-4- :money_with_wings: 
-5- :shield: 
-6- :musical_note: 
+     Lamaa Bravawat?    
+1- :rocket: Excellent connection speed
+2- :beginner: easy to use
+3- :warning: Daily maintenance
+4- :money_with_wings: Fully free
+5- :shield: Contains a firewall to keep servers safe
+6- :musical_note: It has a high quality music feature
 [❖═════════════════════════════❖]
 
-الاوامر العامة
+General orders
 
-#id 
+#id Information about your personal account
 
-#server معلومات حول السيرفر
+#server Information about the server
 
-#move سحب عضو الى رومك الصوتي
+#move Drag a member to your audio podcast
 
-#clear مسح الرسائل الموجوده في الروم بعدد
+#clear Clear the messages in the number
 
-#avatar يعرض اك صورتك الشخصية
+#avatar Displays your personal photo
 
-#image يعرض لك صورة السيرفر
+#image Displays the server image
 
-#credit يوريك كم الكريديت حقتك
+#credit Uric how much creed you hold
 
-#daily يسوي لك سحب فلوس
+#daily It settles you to withdraw money
 
-#rep يعطي ريب
+#rep Give it a shot
 
-#rank يطلع لك نقاطك
+#rank Tell you your points
 
-#profile معلومات عامة مع الصورة
+#profile General information with image
 
-أوامر ادارة السيرفرات 
+Manage servers
 
-#ban حضر عضو من السيرفر
+#ban A member of the server attended
 
-#setwelcomer لتحديد روم الويلكم
+#setwelcomer To determine your mileage
 
-#autorole لتشغيل الاوتو رول وتحديد الرتبه
+#autorole To run the Auto Roll and set the grade
 
-#kick طرد عضو من السيرفر
+#kick Expel a member from the server
 
-#mute اعضاء ميوت كتابي لعضو في السيرفر
+#mute Members of my book death to a member of the server
 
-#unmute فك الميوت عن عضو في السيرفر
+#unmute Unplug the member from the server
 
-#warn لتحذير شخص
+#warn =To warn someone
 
 #dac حذف جميع رومات السيرفر
 
@@ -1965,10 +1966,10 @@ message.guild.members.forEach(m => {
 var bc = new
 Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle(':mega: برودكاست')
-.addField('🔰السيرفر🔰', message.guild.name)
-.addField('🚩المرسل🚩', message.author.username)
-.addField('📜الرسالة📜', args)
+.setTitle(':mega: Broadcast')
+.addField('🔰Server🔰', message.guild.name)
+.addField('🚩Sender🚩', message.author.username)
+.addField('📜the message📜', args)
 .setThumbnail('https://a.top4top.net/p_1008gqyyd1.png')
 .setFooter(copy, client.user.avatarURL);
 m.send({ embed: bc })
