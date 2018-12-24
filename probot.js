@@ -1961,7 +1961,7 @@ let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.
 let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
 let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
 reaction1.on("collect", r => {
-message.channel.send(`☑ |   ${message.guild.members.size} يتم ارسال البرودكاست الى عضو `).then(m => m.delete(5000));
+message.channel.send(`☑ |   ${message.guild.members.size} The podcast is sent to a member `).then(m => m.delete(5000));
 message.guild.members.forEach(m => {
 var bc = new
 Discord.RichEmbed()
@@ -2181,7 +2181,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
     serverQueue.songs.push(song);
     console.log(serverQueue.songs);
     if (playlist) return undefined;
-    else return msg.channel.send(` **${song.title}** تم اضافه الاغنية الي القائمة!`);
+    else return msg.channel.send(` **${song.title}** The song has been added to the menu!`);
   }
   return undefined;
 }
@@ -4691,7 +4691,7 @@ if (err) console.error(err)
 });
 })
 const sWlc = {}
-const premium = ['429972030092476437', '', '', '']
+const premium = ['472680171451973632', '', '', '']
 client.on('message', message => {
 var prefix = "#";
 if(message.channel.type === "dm") return;
@@ -4724,8 +4724,8 @@ client.on("guildMemberAdd", member => {
         .setColor('RANDOM')
         .setThumbnail(h.avatarURL)
         .setAuthor(h.username,h.avatarURL)
-        .addField(': تاريخ دخولك الدسكورد',`${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} **\n** \`${moment(member.user.createdAt).fromNow()}\``,true)
-         .addField(': تاريخ دخولك السيرفر',`${moment(member.joinedAt).format('D/M/YYYY h:mm a ')} \n\`\`${moment(member.joinedAt).startOf(' ').fromNow()}\`\``, true)
+        .addField(': The date of your login',`${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} **\n** \`${moment(member.user.createdAt).fromNow()}\``,true)
+         .addField(': Date of login',`${moment(member.joinedAt).format('D/M/YYYY h:mm a ')} \n\`\`${moment(member.joinedAt).startOf(' ').fromNow()}\`\``, true)
          .setFooter(`${h.tag}`,"https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif")
      welcomer.send({embed:heroo});
 
@@ -4787,12 +4787,12 @@ client.on("guildMemberAdd", member => {
 
     })
 
-    const devs = ['498378677512437762'];
+    const devs = ['472680171451973632'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
     if (message.content.startsWith(prefix + 'setStreaming')) {
-      if (!devs.includes(message.author.id)) return message.channel.send("<@429972030092476437> only this guy can do restart the bot so don't try again :wink:.");
+      if (!devs.includes(message.author.id)) return message.channel.send("<@472680171451973632> only this guy can do restart the bot so don't try again :wink:.");
       message.delete();
       client.user.setGame(argresult, 'https://twitch.tv/DynastyShop');
 
